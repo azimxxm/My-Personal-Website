@@ -1,0 +1,55 @@
+{% load static %}
+<section class="section testimonials">
+  <div class="top">
+    <h2>Some Reviews of Happy Customer</h2>
+    <p>
+      These are the stories of my wonderful clients and the great appreciation
+      they have given me
+    </p>
+  </div>
+
+  <div class="row container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        {% for testimonial in testimonials %}
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="col d-flex">
+              <div class="info d-flex">
+                <div class="image">
+                  <img src="{{ testimonial.customer_pic.url }}" alt="images" />
+                </div>
+                <div>
+                  <h4>{{testimonial.first_name }} {{testimonial.last_name }}</h4>
+                  <span>{{testimonial.position }}</span>
+                </div>
+              </div>
+
+              <!-- Rating -->
+              <div class="rating d-flex">
+                <span>{{testimonial.rating }}</span>
+                <span><i class="bx bxs-star"></i></span>
+              </div>
+            </div>
+
+            <p class="col">  {{testimonial.testimonial }}  </p>
+            <p class="col">  {{testimonial.created_at }}  </p>
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+      <div class="navigation d-flex">
+        <div class="custom-pagination"></div>
+        <div class="d-flex">
+          <div class="custom-button custom-button-next d-flex">
+            <i class="bx bx-left-arrow-alt"></i>
+          </div>
+          <div class="custom-button custom-button-prev d-flex">
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

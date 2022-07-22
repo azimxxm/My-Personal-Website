@@ -13,8 +13,8 @@
   --default: #4f5665;
   --grey: #e0e0e0;
   --yellow: #fea250;
-  --orange: #fa620c;
-  --pink: #ffbcbc;
+  --orange: #e7e0dc;
+  --pink: #228b7a6c;
   --blue: #389af5;
   --brown: #a95e19;
 }
@@ -531,7 +531,7 @@ p {
 
 .languages .language-3 {
   grid-template-columns: 1fr 3.5fr;
-  top: 50%;
+  top: 40%;
   right: -44rem;
 }
 
@@ -545,8 +545,8 @@ p {
 }
 
 .languages .language-4 {
-  grid-template-columns: 3.5fr 1fr;
-  top: 50%;
+  grid-template-columns: 4.5fr 1fr;
+  top: 35%;
   left: -43rem;
 }
 
@@ -556,13 +556,13 @@ p {
 
 .languages .language-4 div {
   text-align: right;
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .languages .language-5 {
   grid-template-columns: 1fr 3.5fr;
   bottom: 3rem;
-  right: -38rem;
+  right: -40rem;
 }
 
 .languages .language-5 .icon {
@@ -585,7 +585,7 @@ p {
 }
 
 .languages .language-6 div {
-  text-align: right;
+   text-align: right;
   margin-right: 3rem;
 }
 
