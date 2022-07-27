@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
 /* =========== User Data =========== */
 
 const counters = [...document.querySelectorAll(".user-data .number")];
-const speed = 5000; // change animation speed here
+const speed = 20; // change animation speed here
 
 const start = () => {
   counters.forEach((counter) => {
