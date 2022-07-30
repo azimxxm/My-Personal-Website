@@ -23,14 +23,17 @@ class Testimonial(models.Model):
         verbose_name_plural = 'Testimonials'
     
 
-    # def save(self, *args, **kwargs):
-    #     super().save(*args, **kwargs)
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
-    #     img = Image.open(self.customer_pic.path)
-    #     if img.height > 300 or img.width > 300:
-    #         output_size = (300, 300)
-    #         img.thumbnail(output_size)
-    #         img.save(self.customer_pic.path)
+        img = Image.open(self.customer_pic.path)
+        if img.height > 1000 or img.width > 1000:
+            # image new width and new heigth
+            new_width = img.height // 2
+            new_height = img.width // 2
+            # resize image
+            img = img.resize((new_width, new_height), Image.ANTIALIAS)
+            img.save(self.customer_pic.path)
 
-    #     else:
-    #         img.save(self.customer_pic.path)
+        else:
+            img.save(self.customer_pic.path)

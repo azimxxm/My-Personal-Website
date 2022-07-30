@@ -621,6 +621,7 @@ p {
 
   .languages .image img {
     width: 20rem;
+    height: 20rem;
   }
 
   .languages .image .circle-1 {
@@ -643,6 +644,7 @@ p {
 @media (max-width: 567px) {
   .languages .image img {
     width: 17rem;
+    height: 17rem;
   }
 
   .languages .image .circle-1 {
