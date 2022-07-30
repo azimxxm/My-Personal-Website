@@ -14,7 +14,7 @@
   --grey: #e0e0e0;
   --yellow: #fea250;
   --orange: #e7e0dc;
-  --pink: #228b7a6c;
+  --pink: #23645ad8;
   --blue: #389af5;
   --brown: #a95e19;
 }
@@ -539,9 +539,11 @@ p {
   background-color: var(--pink);
 }
 
+
+
 .languages .language-3 div {
   text-align: left;
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 
 .languages .language-4 {
