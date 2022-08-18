@@ -1,0 +1,30 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+{% block title %}  Error 404  {% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex align-items-center justify-content-center">
+                    <div>
+                        <img class="img-fluid w-75" src="https://luchchemical.net/images/404.png" alt="404 not found">
+                        <h1 class="mt-5">Sahifa yo'q <span class="fw-bolder text-primary">kechirasiz!!</span></h1>
+                        <p class="lead my-4">Oops! Siz yomon havolani kuzatdingiz. Agar bu biz bilan muammo deb
+                            o'ylasangiz, bizga ayting.</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fas fa-arrow-left fa-2x "></i>
+                            <a href="{% url 'index' %}" class="btn btn-warning">Bosh
+                                sahifaga qaytish</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}

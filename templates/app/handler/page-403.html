@@ -1,0 +1,29 @@
+{% extends "app/base.html" %}
+{% block title %} Error 403 {% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex align-items-center justify-content-center">
+                    <div>
+                        <img class="img-fluid w-75" src="https://luchchemical.net/images/404.png"
+                            alt="404 not found">
+                        <h1 class="mt-5">
+                            Kechirasiz <span class="fw-bolder text-primary">!!!</span>
+                        </h1>
+                        <p class="lead my-4">
+                            Sizz so'ragan sahifa topilmadi
+                        </p>
+                        <a class="btn btn-dark " href="{% url 'index' %}">
+                            <i class="fas fa-chevron-left me-3 ps-2 animate-left-3"></i>Qaytish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}
